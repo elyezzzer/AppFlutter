@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "731362222841",
+    "project_id": "emprestimodeferramentas",
+    "storage_bucket": "emprestimodeferramentas.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:731362222841:android:22765632781a2ce67eb828",
+        "android_client_info": {
+          "package_name": "com.example.appflutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBV7e8O56h5Jv5uc7qW2g03crYF0gxJ4_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
