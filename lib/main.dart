@@ -16,9 +16,9 @@ void main() async {
         measurementId: "G-Y1KZKPCP1S"
       ),
     );
-    print('✅ Firebase inicializado com SUCESSO!');
+    print('✅ FIREBASE INICIALIZADO!');
   } catch (e) {
-    print('❌ ERRO no Firebase: $e');
+    print('❌ ERRO NO FIREBASE: $e');
   }
   
   runApp(MyApp());
