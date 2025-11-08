@@ -1,19 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
   <base href="$FLUTTER_BASE_HREF">
 
   <meta charset="UTF-8">
@@ -29,10 +16,31 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>appflutter</title>
+  <title>Empréstimo Ferramentas</title>
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+  <!-- ADICIONE ESTE SCRIPT DO FIREBASE -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+  
+  <script>
+    // SUAS CONFIGURAÇÕES DO FIREBASE - VOCÊ PRECISA COLAR AS REAIS AQUI
+    const firebaseConfig = {
+  apiKey: "AIzaSyB78QXftEU_suzpxObMvIjyS93rIv1wLU8",
+  authDomain: "emprestimodeferramentas.firebaseapp.com",
+  projectId: "emprestimodeferramentas",
+  storageBucket: "emprestimodeferramentas.firebasestorage.app",
+  messagingSenderId: "731362222841",
+  appId: "1:731362222841:web:725b47d2a1e2f3bc7eb828",
+  measurementId: "G-Y1KZKPCP1S"
+};
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    console.log('🔥 Firebase configurado no HTML');
+  </script>
+
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
