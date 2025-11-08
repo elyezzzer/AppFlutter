@@ -21,7 +21,7 @@ class DefaultFirebaseOptions {
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
-        return android;
+      
       case TargetPlatform.iOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for ios - '
@@ -58,12 +58,5 @@ class DefaultFirebaseOptions {
     storageBucket: 'emprestimodeferramentas.firebasestorage.app',
     measurementId: 'G-Y1KZKPCP1S',
   );
-
-  static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBV7e8O56h5Jv5uc7qW2g03crYF0gxJ4_I',
-    appId: '1:731362222841:android:22765632781a2ce67eb828',
-    messagingSenderId: '731362222841',
-    projectId: 'emprestimodeferramentas',
-    storageBucket: 'emprestimodeferramentas.firebasestorage.app',
-  );
+  
 }

@@ -1,16 +1,44 @@
-# appflutter
+# Setup do projeto
 
-A new Flutter project.
+## Clonar repositório
 
-## Getting Started
+```bash
+git clone https://github.com/elyezzzer/AppFlutter.git
+```
 
-This project is a starting point for a Flutter application.
+## Entrar na pasta do projeto
+```bash
+cd /appflutter
+```
 
-A few resources to get you started if this is your first Flutter project:
+## Instalar dependências
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```bash
+flutter pub get
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Configurar firebase (WEB)
+
+```bash
+static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'xxxxx',
+    appId: 'xxxxx',
+    messagingSenderId: '731362222841',
+    projectId: 'emprestimodeferramentas',
+    authDomain: 'emprestimodeferramentas.firebaseapp.com',
+    storageBucket: 'emprestimodeferramentas.firebasestorage.app',
+    measurementId: 'G-Y1KZKPCP1S',
+  );
+```
+
+## Rodar o app
+```bash
+flutter run -d chrome
+```
+
+
+## Em caso de algum erro
+```bash
+flutter clean
+flutter pub get
+```

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 import 'pages/available_tools_page.dart';
 import 'pages/borrowed_tools_page.dart';
 import 'pages/add_tool_page.dart';
@@ -7,22 +8,9 @@ import 'pages/add_tool_page.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   
-  try {
-    await Firebase.initializeApp(
-      options: const FirebaseOptions(
-        apiKey: "AIzaSyB78QXftEU_suzpxObMvIjyS93rIv1wLU8",
-        authDomain: "emprestimodeferramentas.firebaseapp.com",
-        projectId: "emprestimodeferramentas",
-        storageBucket: "emprestimodeferramentas.firebasestorage.app",
-        messagingSenderId: "731362222841",
-        appId: "1:731362222841:web:725b47d2a1e2f3bc7eb828",
-        measurementId: "G-Y1KZKPCP1S"
-      ),
-    );
-    print('✅ FIREBASE INICIALIZADO!');
-  } catch (e) {
-    print('❌ ERRO NO FIREBASE: $e');
-  }
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   
   runApp(MyApp());
 }
