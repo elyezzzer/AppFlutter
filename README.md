@@ -1,3 +1,11 @@
+# AppFlutter
+
+Aplicativo Flutter para gerenciar ferramentas e empréstimos de forma simples e intuitiva.
+
+## Visão Geral
+
+Este projeto é uma aplicação móvel e multiplataforma construída com Flutter (Dart). Ele permite cadastrar ferramentas, listar as disponíveis, controlar empréstimos e visualizar as ferramentas emprestadas.
+
 # Setup do projeto
 
 ## Clonar repositório
